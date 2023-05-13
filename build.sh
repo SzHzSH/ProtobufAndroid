@@ -6,6 +6,7 @@ if [[ -z "$ANDROID_NDK" ]]; then
 fi
 
 cd protobuf
+git checkout v3.4.0
 
 NDK_TOOLCHAIN="$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64"
 STRIP="$NDK_TOOLCHAIN/bin/llvm-strip"
